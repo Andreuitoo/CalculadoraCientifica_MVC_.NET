@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "HistorialOperaciones";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Listado de operaciones</h1>
+
+    <h2>Operaciones registradas:</h2>
+    <ul>
+        @foreach (var operacion in Model)
+        {
+            <li>@operacion = @operacion.operacion</li>
+            <li>@operacion = @operacion.resultado</li>
+        }
+    </ul>
+</div>
